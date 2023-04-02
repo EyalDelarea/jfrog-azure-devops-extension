@@ -15,9 +15,9 @@
         displayName: 'Download and Run Frogbot'
         env:
            # Predefined Azure Pipelines variables. There's no need to modify them.
-           JF_GIT_PROJECT: $(System.TeamProject)
-           JF_GIT_API_ENDPOINT: $(System.CollectionUri)
-           JF_GIT_PROVIDER: 'azureRepos'
+           JF_GIT_PROJECT: jfrog-azure-devops-extension
+           JF_GIT_API_ENDPOINT: https://api.github.com/repos/
+           JF_GIT_PROVIDER: github
 
            # [Mandatory]
            # Azure Repos personal access token with Code -> Read & Write permissions
@@ -38,7 +38,7 @@
 
            # [Mandatory]
            # The name of the organization that owns this project
-           JF_GIT_OWNER: ""
+           JF_GIT_OWNER: "eyaldelarea"
 
            # [Optional]
            # If the machine that runs Frogbot has no access to the internet, set the name of a remote repository 
